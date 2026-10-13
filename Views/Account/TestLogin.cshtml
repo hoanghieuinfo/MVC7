@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Test Login";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Đăng nhập thành công</h2>
+                <p class="card-text">Xin chào <strong>@ViewBag.FullName</strong>! Bạn đang đăng nhập.</p>
+                <table class="table table-sm">
+                    <tr><th>UserId</th><td>@ViewBag.UserId</td></tr>
+                    <tr><th>Username</th><td>@ViewBag.Username</td></tr>
+                    <tr><th>Họ và tên</th><td>@ViewBag.FullName</td></tr>
+                </table>
+                <a asp-action="Logout" class="btn btn-outline-danger">Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+</div>
